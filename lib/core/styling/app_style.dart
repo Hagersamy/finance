@@ -22,4 +22,17 @@ class AppStyle {
     fontWeight: FontWeight.bold,
     color: AppColors.blackColor,
   );
+  static TextStyle normalTextStyle = TextStyle(
+    fontFamily: AppFonts.bodyFont,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.normal,
+    color: AppColors.grayColor,
+  );
+  static TextStyle normalTextPrimaryStyle = TextStyle(
+    fontFamily: AppFonts.bodyFont,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.normal,
+    color: AppColors.primaryColor,
+  );
+
 }
