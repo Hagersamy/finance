@@ -41,15 +41,17 @@ class OnboardingScreen extends StatelessWidget {
             },
           ),
           SizedBox(height: 15.h),
-          Text(
-            "Continue as Guest?",
-            style: TextStyle(
+          TextButton(
+            onPressed: () {
+              GoRouter.of(context).goNamed(AppRoutes.MainScreen);
+            },
+             child:Text( "Continue as Guest?",style: TextStyle(
               fontSize: 16.sp,
               color: Colors.black,
               decoration: TextDecoration.underline,
             ),
           ),
-        ],
+          )],
       ),
     );
   }
