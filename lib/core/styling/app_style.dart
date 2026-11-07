@@ -34,5 +34,11 @@ class AppStyle {
     fontWeight: FontWeight.normal,
     color: AppColors.primaryColor,
   );
+  static TextStyle boldTextSecondaryStyle = TextStyle(
+    fontFamily: AppFonts.bodyFont,
+    fontSize: 18.sp,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
 
 }

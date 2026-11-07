@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_screen.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -20,9 +22,17 @@ class _MainScreenState extends State<MainScreen> {
     BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
   ];
 
+  List<Widget> get pages => const [
+    HomeScreen(),
+    Center(child: Text("Statistic")),
+    Center(child: Text("My card")),
+    Center(child: Text("Profile")),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(child: pages[currentIndex]),
       bottomNavigationBar: BottomNavigationBar(
         items: items,
         currentIndex: currentIndex,
